@@ -1,4 +1,4 @@
-# --- macOS System Files ---
+# ---macOS System Files ---
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -11,17 +11,17 @@
 *.war
 *.ear
 
-# --- VS Code IDE Files ---
+# ---VS Code IDE Files ---
 .vscode/
 *.code-workspace
 .history/
 
-# --- Windows System Files ---
+# ---Windows System Files ---
 Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# --- Temporary/Backup Files ---
+# ---Temporary?Backup Files---
 *.tmp
 *.bak
 *.swp
