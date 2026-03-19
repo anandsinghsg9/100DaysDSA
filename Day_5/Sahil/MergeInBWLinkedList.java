@@ -1,63 +1,65 @@
 package Day_5.Sahil;
 
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {}
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-}
-
-class Solution {
-    public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
-        ListNode left = null;
-        ListNode right = list1;
-
-        for (int i = 0; i <= b; i++) {
-            if (i == a - 1) {
-                left = right;
-            }
-            right = right.next;
-        }
-
-        if (left != null) {
-            left.next = list2;
-        } else {
-            list1 = list2;
-        }
-
-        ListNode temp = list2;
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-
-        temp.next = right;
-
-        return list1;
-    }
-}
-
 public class MergeInBWLinkedList {
+
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {}
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
+    static class Solution {
+        public ListNode mergeInBetween(ListNode list1, int a, int b, ListNode list2) {
+            ListNode left = null;
+            ListNode right = list1;
+
+            for (int i = 0; i <= b; i++) {
+                if (i == a - 1) {
+                    left = right;
+                }
+                right = right.next;
+            }
+
+            if (left != null) {
+                left.next = list2;
+            } else {
+                list1 = list2;
+            }
+
+            ListNode temp = list2;
+            while (temp.next != null) {
+                temp = temp.next;
+            }
+
+            temp.next = right;
+
+            return list1;
+        }
+    }
 
     public static void printList(ListNode head) {
         ListNode current = head;
         while (current != null) {
-            System.out.print(current.val + " -> ");
+            System.out.print(current.val);
+            if (current.next != null) {
+                System.out.print(" -> ");
+            }
             current = current.next;
         }
-        System.out.println("null");
+        System.out.println();
     }
 
     public static void main(String[] args) {
-
         ListNode list1 = new ListNode(0);
         list1.next = new ListNode(1);
         list1.next.next = new ListNode(2);
