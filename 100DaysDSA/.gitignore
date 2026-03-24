@@ -1,0 +1,27 @@
+# ---macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# --- Java Compiled Files ---
+*.class
+*.log
+*.jar
+*.war
+*.ear
+
+# ---VS Code IDE Files ---
+.vscode/
+*.code-workspace
+.history/
+
+# ---Windows System Files ---
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ---Temporary?Backup Files---
+*.tmp
+*.bak
+*.swp
