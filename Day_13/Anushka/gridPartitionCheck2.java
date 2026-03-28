@@ -6,7 +6,6 @@ public class gridPartitionCheck2 {
             {1, 5},
             {4, 6}
         };
-
         Solution obj = new Solution();
         System.out.println(obj.canPartitionGrid(grid)); // output
     }
@@ -34,7 +33,6 @@ class Solution {
                    .add(new int[]{i, j});
             }
         }
-
         // -------- HORIZONTAL CUT --------
         long currSum = 0;
         for (int i = 0; i < m - 1; i++) {
@@ -56,15 +54,11 @@ class Solution {
             if (isValid(currSum, totalSum - currSum, j, false))
                 return true;
         }
-
         return false;
     }
-
     // 🔥 validation
     boolean isValid(long sumA, long sumB, int index, boolean rowCut) {
-
         if (sumA == sumB) return true;
-
         long diff = sumA - sumB;
         long absDiff = Math.abs(diff);
 
