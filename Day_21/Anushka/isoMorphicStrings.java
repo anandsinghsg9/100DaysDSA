@@ -1,0 +1,32 @@
+package Day_21.Anushka;
+
+public class isoMorphicStrings {
+
+    public static void main(String[] args) {
+
+        String s = "egg";
+        String t = "add";
+
+        System.out.println(isIsomorphic(s, t));
+    }
+
+    public static boolean isIsomorphic(String s, String t) {
+
+        int[] mapST = new int[256];
+        int[] mapTS = new int[256];
+
+        for(int i = 0; i < s.length(); i++){
+
+            char c1 = s.charAt(i);
+            char c2 = t.charAt(i);
+
+            if(mapST[c1] != 0 && mapST[c1] != c2) return false;
+            if(mapTS[c2] != 0 && mapTS[c2] != c1) return false;
+
+            mapST[c1] = c2;
+            mapTS[c2] = c1;
+        }
+
+        return true;
+    }
+}
