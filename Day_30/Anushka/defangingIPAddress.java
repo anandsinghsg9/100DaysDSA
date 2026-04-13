@@ -1,6 +1,6 @@
 package Day_30.Anushka;
 
-public class defangingIPAddress {
+public class dIPefangingIPAddress {
     
     public static String defangIPaddr(String address) {
         return address.replace(".", "[.]");
