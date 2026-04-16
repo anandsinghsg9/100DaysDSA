@@ -2,7 +2,7 @@ package Day_33.Anand;
 
 import java.util.Stack;
 
-public class largestRectangleHistogram {
+class largestRectangleHistogram {
     public int largestRectangleArea(int[] heights) {
         Stack <Integer> s=new Stack<>();
         int []left= new int[heights.length];
