@@ -11,6 +11,5 @@ public class powerOf2 {
         int n=8;
         powerOf2 sol=new powerOf2();
         System.out.println(sol.isPowerOfTwo(n));
-    }
-    
+    }   
 }
