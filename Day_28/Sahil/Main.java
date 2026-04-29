@@ -1,6 +1,4 @@
-package Day_28.Sahil;
-
-
+package Sahil;
 
 public class Main {
 
