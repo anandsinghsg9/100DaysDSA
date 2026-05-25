@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class printNto1 {
+
+    static void print(int n) {
+
+        if (n == 0) {
+            return;
+        }
+
+        System.out.println(n);
+
+        print(n - 1);
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+
+        print(n);
+    }
+}touch printNto1.java
+ cd /Users/motudon/Documents/GitHub/100DaysDSA ; /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-25.jdk/Contents/Home/bin/java -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/motudon/Library/Application\ Support/Code/User/workspaceStorage/038c38b57edfa79fbe58d7bfa378ecc3/redhat.java/jdt_ws/100DaysDSA_fe6f45da/bin printNto1 
+touch printNto1.java
+
