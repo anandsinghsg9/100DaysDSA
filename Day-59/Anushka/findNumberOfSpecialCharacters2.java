@@ -2,7 +2,6 @@ public class findNumberOfSpecialCharacters2 {
     public static int numberOfSpecialChars(String word) {
         int count = 0;
         for(char ch = 'a'; ch <= 'z'; ch++) {
-
             int small = word.lastIndexOf(ch);
 
             int capital = word.indexOf(Character.toUpperCase(ch));
