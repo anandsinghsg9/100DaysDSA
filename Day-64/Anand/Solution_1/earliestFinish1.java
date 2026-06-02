@@ -1,6 +1,6 @@
-package Anand;
+package Anand.Solution_1;
 
-public class earliestFinish {
+public class earliestFinish1 {
     public int earliestFinishTime(int[] landStartTime, int[] landDuration, int[] waterStartTime, int[] waterDuration) {
         int output=Integer.MAX_VALUE;
         for(int i=0;i<landStartTime.length;i++){
@@ -19,7 +19,7 @@ public class earliestFinish {
         return output;
     }
     public static void main(String[] args) {
-        earliestFinish ef = new earliestFinish();
+        earliestFinish1 ef = new earliestFinish1();
         int[] landStartTime = {1, 2, 3};
         int[] landDuration = {2, 3, 4};
         int[] waterStartTime = {2, 3, 4};
