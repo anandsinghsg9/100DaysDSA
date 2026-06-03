@@ -1,6 +1,7 @@
 package Day_35.Anand;
 
 
+
 public class maxOnes {
     public int findMaxConsecutiveOnes(int[] nums) {
         int result=0;
@@ -12,6 +13,8 @@ public class maxOnes {
             }else{
                 count=0;
             }
+            
+
             
         }
         return result;    
