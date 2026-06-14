@@ -1,6 +1,6 @@
 public class subsequences {
     public static void main(String[] args) {
-        String s = "abcd";
+        String s = "Anushka";
         subSequences("", 0  , new StringBuilder(s));
     }
     private static void subSequences(String ans , int index , StringBuilder s){

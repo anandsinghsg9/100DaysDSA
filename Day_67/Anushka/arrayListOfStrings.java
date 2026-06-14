@@ -7,5 +7,9 @@ public class arrayListOfStrings {
         for(String ele : list){
             System.out.println(ele + " ");
         }
+        list.add("Grapes");
+        for(String ele : list){
+            System.out.println(ele+" ");
+        }
     }
 }
